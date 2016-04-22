@@ -1,0 +1,354 @@
+﻿<style>
+h2 {
+		display: block;
+		font-size: 24px;
+		color: #333;
+		line-height: 24px;
+		font-weight: 400;
+		text-align: left;
+		margin-bottom: 20px;
+	}
+	
+.inner {
+		height: 1000px;
+		position: relative;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		background: #FFF;
+		text-align: center;
+		overflow: hidden;
+	}
+	
+.inner ul {
+		width: 100%;
+		height: 1000px;
+	}
+	
+.inner ul li {
+		position: absolute;
+		padding: 20px;
+		overflow: hidden;
+		background: #FFF;
+	}
+	
+.inner ul li .image {
+		position: relative;
+	}
+	
+.inner ul .hover {
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: none;
+	}
+	
+.inner ul .show-hover:hover .hover {
+		display: block;
+	}
+	
+.inner ul li a {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		cursor: pointer;
+		text-decoration: none;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+	
+.inner ul li span {
+		display: block;
+	}
+	
+.inner ul .list-1-1 {
+		left: 0;
+		top: 0;
+		width: 290px;
+		height: 280px;
+	}
+	
+.inner ul .list-1-1 .image {
+		height: 232px;
+		width: 100%;
+		text-align: center;
+		line-height: 232px;
+	}
+	
+.inner ul .list-1-2 {
+		left: 0;
+		top: 320px;
+		width: 290px;
+		height: 640px;
+	}
+	
+.inner ul .list-1-2 .image {
+		height: 592px;
+		width: 100%;
+		text-align: center;
+		line-height: 592px;
+	}
+	
+.inner ul .list-2-1 {
+		left: 330px;
+		top: 0;
+		width: 290px;
+		height: 280px;
+	}
+	
+.inner ul .list-2-1 .image {
+		height: 232px;
+		width: 100%;
+		text-align: center;
+		line-height: 232px;
+	}
+	
+.inner ul .list-2-2 {
+		left: 330px;
+		top: 320px;
+		width: 290px;
+		height: 280px;
+	}
+	
+.inner ul .list-2-2 .image {
+		height: 232px;
+		width: 100%;
+		text-align: center;
+		line-height: 232px;
+	}
+	
+.inner ul .list-3-1 {
+		left: 660px;
+		top: 0;
+		width: 290px;
+		height: 600px;
+	}
+	
+.inner ul .list-3-1 .image {
+		height: 552px;
+		width: 100%;
+		text-align: center;
+		line-height: 552px;
+	}
+	
+.inner ul .list-3-2 {
+		left: 330px;
+		top: 640px;
+		width: 620px;
+		height: 320px;
+	}
+	
+.inner ul .list-3-2 .image {
+		height: 272px;
+		width: 100%;
+		text-align: center;
+		line-height: 272px;
+	}
+	
+.inner ul .image {
+		width: 100%;
+	}
+	
+.inner ul .image img {
+		vertical-align: middle;
+	}
+	
+.inner ul .text {
+		width: 100%;
+		height: 48px;
+	}
+	
+.inner ul .text .price {
+		height: 30px;
+		line-height: 30px;
+		font-size: 18px;
+		color: #888;
+		text-align: left;
+	}
+	
+.inner ul .text .price-num {
+		float: left;
+		margin-right: 10px;
+	}
+	
+.inner ul .text .price-info {
+		float: left;
+		height: 21px;
+		padding: 0 10px;
+		margin-top: 5px;
+		color: #FFF;
+		font-size: 12px;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		line-height: 21px;
+	}
+	
+.inner ul .text .bg-red {
+		background: #E45045;
+	}
+	
+.inner ul .text .bg-gray {
+		background: #BCBEC3;
+	}
+	
+.inner ul .text .price-info-hd .price-info {
+		display: none;
+	}
+	
+.inner ul .text .product-name {
+		height: 18px;
+		line-height: 18px;
+		font-size: 16px;
+		color: #333;
+		text-align: left;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+	
+.inner ul .box-shadow {
+		width: 100%;
+		height: 100%;
+		display: none;
+	}
+	
+.inner ul li a {
+		opacity: 0;
+		-webkit-transition: opacity 1s ease-out;
+		transition: opacity 0.3s ease-out;
+	}
+	
+.inner ul li a:hover {
+		opacity: 1;
+		-webkit-transition: opacity 1s ease-out;
+		transition: opacity 0.3s ease-out;
+	}
+	
+.inner ul li a:hover .box-shadow {
+		display: block;
+	}
+	
+.inner .border-vertical-1 {
+		position: absolute;
+		left: 330px;
+		top: 0;
+		width: 1px;
+		height: 1000px;
+		background: #EFEFEF;
+	}
+	
+.inner .border-vertical-2 {
+		position: absolute;
+		left: 660px;
+		top: 0;
+		width: 1px;
+		height: 640px;
+		background: #EFEFEF;
+	}
+	
+.inner .border-horizontal-1 {
+		position: absolute;
+		left: 0px;
+		top: 320px;
+		width: 660px;
+		height: 1px;
+		background: #EFEFEF;
+	}
+	
+.inner .border-horizontal-2 {
+		position: absolute;
+		left: 330px;
+		top: 640px;
+		width: 660px;
+		height: 1px;
+		background: #EFEFEF;
+	}
+</style>
+
+<div class="inner">
+			<ul>
+				<li class="list-1-1">
+					<span class="image">
+				<img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+			</span>
+					<span class="text" style="font-family:microsoft yahei;">
+				<span class="price">
+					<span class="price-num">129元</span><span class="price-info bg-red">特价</span>
+					</span>
+					<span class="product-name">JBL T200a</span>
+					</span>
+					<a href="//detail.tmall.com/item.htm?id=43721593479" target="_blank"><img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" class="box-shadow"></a>
+				</li>
+				<li class="list-1-2">
+					<span class="image">
+				<img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+			</span>
+					<span class="text" style="font-family:microsoft yahei;">
+				<span class="price price-info-hd">
+					<span class="price-num">199元</span><span class="price-info bg-red">耳机特惠</span>
+					</span>
+					<span class="product-name">JBL E10</span>
+					</span>
+					<a href="//detail.tmall.com/item.htm?id=41463988939" target="_blank"><img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" class="box-shadow"></a>
+				</li>
+				<li class="list-2-1">
+
+					<span class="image">
+				<img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+			</span>
+					<span class="text" style="font-family:microsoft yahei;">
+				<span class="price">
+					<span class="price-num">399元</span><span class="price-info bg-red">特价</span>
+					</span>
+					<span class="product-name">Jabra REVO</span>
+					</span>
+					<a href="//detail.tmall.com/item.htm?spm=a1z10.5-b.w4011-8740890173.43.U0pQAA&amp;id=520118727083&amp;rn=2f6055c70e5399f2e2108c14e43fe3c0&amp;abbucket=18" target="_blank"><img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" class="box-shadow"></a>
+				</li>
+				<li class="list-2-2">
+
+					<span class="image">
+				<img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+			</span>
+					<span class="text" style="font-family:microsoft yahei;">
+				<span class="price price-info-hd">
+					<span class="price-num">499元</span><span class="price-info bg-gray">Hi-Fi</span>
+					</span>
+					<span class="product-name">JBL SYNCHROS E30</span>
+					</span>
+					<a href="//detail.tmall.com/item.htm?id=42004858096" target="_blank"><img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" class="box-shadow"></a>
+				</li>
+				<li class="list-3-1">
+
+					<span class="image">
+				<img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+			</span>
+					<span class="text" style="font-family:microsoft yahei;">
+				<span class="price price-info-hd">
+					<span class="price-num">799元</span><span class="price-info bg-red">是</span>
+					</span>
+					<span class="product-name">JBL Synchros S300a头戴式耳机</span>
+					</span>
+					<a href="//detail.tmall.com/item.htm?id=526108751701" target="_blank"><img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" class="box-shadow"></a>
+				</li>
+				<li class="list-3-2">
+
+					<span class="image">
+				<img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg">
+			</span>
+					<span class="text" style="font-family:microsoft yahei;">
+				<span class="price price-info-hd">
+					<span class="price-num">1199元</span><span class="price-info bg-red">Red Limited32</span>
+					</span>
+					<span class="product-name">森海塞尔 Urbanite 头戴式耳机</span>
+					</span>
+					<a href="//detail.tmall.com/item.htm?id=43734940368" target="_blank"><img src="https://img.alicdn.com/bao/uploaded/i1/TB1uU4CMpXXXXaBXpXXXXXXXXXX_!!0-item_pic.jpg_240x240.jpg" class="box-shadow"></a>
+				</li>
+			</ul>
+			<div class="border-vertical-1"></div>
+			<div class="border-vertical-2"></div>
+			<div class="border-horizontal-1"></div>
+			<div class="border-horizontal-2"></div>
+		</div>

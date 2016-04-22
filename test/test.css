@@ -1,0 +1,46 @@
+/*导航样式*/
+.skin-box-bd {
+	height: 40px;
+	margin-left: -90px;
+	width: 1190px;
+}
+
+.menu-list {
+	width: 1190px;
+}
+
+.menu {
+	border-left: 1px solid #464646;
+	height: 40px;
+	background: #252525;
+}
+
+.menu-selected {
+	background: #1C66B9;
+	color: #FFF;
+}
+
+.menu .link span,
+.all-cats .link span {
+	height: 40px;
+	line-height: 40px;
+	font-size: 16px;
+	color: #E7E7E7;
+	font-family: 微软雅黑;
+}
+
+.menu a.link:hover span {
+	color: #FFF;
+}
+
+.all-cats .link {
+	width: 120px;
+}
+
+.all-cats {
+	display: none;
+}
+
+.all-cats .popup-icon {
+	margin-top: 17px;
+}

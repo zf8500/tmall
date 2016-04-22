@@ -1,0 +1,818 @@
+/*基础模块*/
+
+.user-dji {
+	margin: 0 auto;
+	position: relative;
+	z-index: 5;
+}
+
+.user-dji * img {
+	max-width: 100%;
+	height: auto;
+}
+
+.user-dji hr {
+	border: #f0f0f0 1px solid;
+	border-bottom: none;
+	margin: 10px 0;
+}
+
+
+/*标准按钮*/
+
+.user-dji .btn {
+	display: block;
+	background: #4BA9F5;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	width: 160px;
+	height: 36px;
+	line-height: 36px;
+	margin: 0 auto;
+	text-decoration: none;
+	transition: all 0.1s ease-out;
+	cursor: pointer;
+}
+
+.user-dji .btn:hover {
+	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	transform: translate(-1px, -1px);
+	-ms-transform: translate(-1px, -1px);
+	/* IE 9 */
+	-webkit-transform: translate(-1px, -1px);
+	/* Safari and Chrome */
+	-o-transform: translate(-1px, -1px);
+	/* Opera */
+	-moz-transform: translate(-1px, -1px);
+	/* Firefox */
+	transition: all 0.1s ease-out;
+}
+
+.user-dji .btn-link {
+	border: 1px solid transparent;
+	border-bottom: 1px solid #44a8f2;
+	text-decoration: none;
+	color: #44a8f2;
+	padding: 5px 10px;
+	-webkit-transition: all 1s ease-out;
+	transition: all 0.3s ease-out;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.user-dji .btn-link:hover {
+	border: 1px solid #44a8f2;
+}
+
+
+/*大型按钮*/
+
+.user-dji .btn-lg {
+	font-size: 20px;
+	width: 220px;
+	height: 44px;
+	line-height: 44px;
+	margin-bottom: 20px;
+}
+
+
+/*价格颜色*/
+
+.user-dji .price {
+	color: #f03717;
+}
+
+
+/*横分割线*/
+
+.user-dji .line-h {
+	position: absolute;
+	height: 1px;
+	background: #f0f0f0;
+	width: 100%;
+	display: block;
+}
+
+
+/*竖分割线*/
+
+.user-dji .line-v {
+	position: absolute;
+	width: 1px;
+	background: #f0f0f0;
+	height: 100%;
+	display: block;
+}
+
+
+/*外层容器*/
+
+.user-dji .dji-box {
+	display: block;
+	clear: both;
+	overflow: visible;
+	position: relative;
+	width: 1200px;
+	padding-top: 20px;
+	background: #f0f0f0;
+}
+
+.user-dji .dji-box * {
+	font-family: "微软雅黑";
+}
+
+
+/*模块标题*/
+
+.user-dji .dji-box h3 {
+	color: #000;
+	background: #f0f0f0;
+	font-size: 20px;
+	padding-bottom: 10px;
+	font-weight: lighter;
+	text-transform: uppercase;
+}
+
+.user-dji .dji-box h3 a {
+	color: #000;
+	text-decoration: none;
+	font-size: 14px;
+	float: right;
+}
+
+.user-dji .dji-box h3 a:hover {
+	color: #4BA9F5;
+}
+
+.user-dji .dji-box h4 a {
+	color: #666;
+	text-decoration: none;
+	font-size: 14px;
+	margin-left: 15px;
+}
+
+.user-dji .dji-box h4 a:hover {
+	color: #4BA9F5;
+}
+
+
+/*模块小标题*/
+
+.user-dji .dji-box h4 {
+	color: #000;
+	font-size: 16px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	border-bottom: #f0f0f0 1px solid;
+	margin: 0;
+	padding: 15px 0;
+}
+
+
+/*内容容器*/
+
+.user-dji .dji-box .inner {
+	position: relative;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #FFF;
+	text-align: center;
+	overflow: visible;
+	margin-bottom: 10px;
+	display: block;
+}
+
+
+/*布局盒子*/
+
+.user-dji .dji-box .item-box {
+	position: relative;
+	display: block;
+	overflow: hidden;
+	z-index: 1;
+}
+
+.user-dji .dji-box .item-box .item {
+	display: block;
+	float: left;
+	position: relative;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+
+/*产品封面*/
+
+.user-dji .dji-box .item-box .item .cover {
+	min-height: 150px;
+	padding: 10px 0;
+}
+
+.user-dji .dji-box .item-box .item .cover img {
+	max-width: 100%;
+	max-height: 200px;
+}
+
+
+/*产品名称*/
+
+.user-dji .dji-box .item-box .item .item-title {
+	font-size: 16px;
+	color: #000;
+	margin-bottom: 10px;
+	line-height: 1.4em;
+	text-transform: uppercase;
+}
+
+
+/*产品描述*/
+
+.user-dji .dji-box .item-box .item .item-summary {
+	font-size: 14px;
+	color: #999;
+	margin-bottom: 20px;
+}
+
+
+/*产品价格*/
+
+.user-dji .dji-box .item-box .item .price {
+	margin-bottom: 20px;
+	font-size: 18px;
+}
+
+.user-dji .dji-box .item-box .item .buy {
+	margin-bottom: 20px;
+}
+
+
+/*产品折扣*/
+
+.user-dji .dji-discount {
+	font-size: 12px;
+	color: #44a8f2;
+	margin-left: 20px;
+}
+
+
+/*产品折扣*/
+
+.user-dji .dji-label {
+	background: #F03717;
+	padding: 3px 6px;
+	line-height: 20px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	border-radius: 2px;
+	font-size: 12px;
+	color: #fff;
+	margin-left: 10px;
+}
+
+
+/*产品链接*/
+
+.user-dji .dji-box .item-box .item a.mask {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	-webkit-transition: opacity 1s ease-out;
+	transition: opacity 0.3s ease-out;
+	background: rgba(255, 255, 255, .3);
+	cursor: pointer;
+	z-index: 5;
+}
+
+.user-dji .dji-box .item-box .item a.mask:hover {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease-out;
+	transition: opacity 0.3s ease-out;
+}
+
+
+/*列表*/
+
+.user-dji .dji-box .item-box .item ul {
+	padding: 10px;
+	margin: 0;
+}
+
+.user-dji .dji-box .item-box .item ul li {
+	list-style: none;
+	text-align: left;
+	font-size: 14px;
+}
+
+.user-dji .dji-box .item-box .item ul li a {
+	color: #666;
+	text-decoration: none;
+	display: block;
+	padding: 10px 15px;
+}
+
+.user-dji .dji-box .item-box .item ul li a:hover {
+	background: #f7f8f9;
+}
+
+
+/*两列布局*/
+
+.user-dji .dji-box .col-2 .item {
+	width: 600px;
+	min-height: 200px;
+}
+
+.user-dji .dji-box .col-2 .line-v {
+	left: 600px;
+}
+
+.user-dji .dji-box .col-2 .line-h {
+	bottom: 0;
+}
+
+.user-dji .dji-box .col-2 .item .box {
+	position: absolute;
+	top: 40px;
+	right: 80px;
+	text-align: left;
+}
+
+.user-dji .dji-box .col-2 .item a.mask {}
+
+.user-dji .dji-box .col-2 .bg1 {
+	-moz-border-radius: 5px 0 0 0;
+	-webkit-border-radius: 5px 0 0 0;
+	border-radius: 5px 0 0 0;
+}
+
+.user-dji .dji-box .col-2 .bg2 {
+	-moz-border-radius: 0 5px 0 0;
+	-webkit-border-radius: 0 5px 0 0;
+	border-radius: 0 5px 0 0;
+}
+
+.user-dji .dji-box .col-2 .dark .item-title {
+	color: #fff;
+}
+
+.user-dji .dji-box .col-2 .dark .item-summary {
+	color: rgba(255, 255, 255, .7);
+}
+
+.user-dji .dji-box .col-2 .dark .price {
+	color: #fff;
+}
+
+
+/*三列布局*/
+
+.user-dji .dji-box .col-3 .item {
+	width: 400px;
+}
+
+.user-dji .dji-box .col-3 .line-v.line-v1 {
+	left: 400px;
+}
+
+.user-dji .dji-box .col-3 .line-v.line-v2 {
+	left: 800px;
+}
+
+
+/*四列布局*/
+
+.user-dji .dji-box .col-4 .item {
+	width: 300px;
+}
+
+.user-dji .dji-box .col-4 .item.item-2x {
+	width: 600px;
+}
+
+.user-dji .dji-box .col-4 .item.item-3x {
+	width: 900px;
+}
+
+.user-dji .dji-box .col-4 .line-v.line-v1 {
+	left: 300px;
+}
+
+.user-dji .dji-box .col-4 .line-v.line-v2 {
+	left: 600px;
+}
+
+.user-dji .dji-box .col-4 .line-v.line-v3 {
+	left: 900px;
+}
+
+.user-dji .dji-box .col-4 .item a.mask {}
+
+
+/*图片圆角*/
+
+.user-dji .photo-top img {
+	-moz-border-radius: 5px 5px 0 0;
+	-webkit-border-radius: 5px 5px 0 0;
+	border-radius: 5px 5px 0 0;
+}
+
+.user-dji .photo-bottom img {
+	-moz-border-radius: 0 0 5px 5px;
+	-webkit-border-radius: 0 0 5px 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+
+/*店铺公告*/
+
+.user-dji .dji-bulletin {
+	padding: 15px;
+	font-size: 14px;
+	text-align: left;
+}
+
+.user-dji .dji-bulletin span {
+	padding: 0 10px;
+}
+
+.user-dji .bulletin-warning .inner {
+	background: #fcf8e3;
+	border: #E9D292 1px solid;
+	color: #8a6d3b;
+}
+
+
+/*重点产品*/
+
+.user-dji .title-lg {
+	-webkit-background-size: 100% auto;
+	background-size: 100% auto;
+	margin: 0 auto 20px auto;
+}
+
+.user-dji .slogan-lg {
+	font-size: 20px;
+	margin-bottom: 20px;
+	line-height: 1.6em;
+}
+
+.user-dji .price-lg {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+
+/*通栏大图*/
+
+.user-dji .main-wide {
+	position: relative;
+	height: 410px;
+}
+
+.user-dji .main-wide .cover {
+	position: absolute;
+	top: -30px;
+	right: -30px;
+	display: block;
+	width: 675px;
+	height: 440px;
+}
+
+.user-dji .main-wide .line-h {
+	top: 400px;
+}
+
+.user-dji .main-wide .line-v {
+	height: 200px;
+	left: 50%;
+	bottom: 0;
+}
+
+.user-dji .main-wide .box {
+	position: absolute;
+	top: 120px;
+	left: 140px;
+}
+
+.user-dji .main-wide .box .item-title-lg {
+	width: 270px;
+	height: 35px;
+}
+
+
+/*大图*/
+
+.user-dji .main-3-1 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 900px;
+	z-index: 1;
+}
+
+.user-dji .main-3-1 .cover {
+	position: absolute;
+	left: 100px;
+	top: -30px;
+}
+
+.user-dji .main-3-1 .cover img {
+	height: 350px;
+}
+
+.user-dji .main-3-1 .box {
+	position: absolute;
+	right: 120px;
+	top: 60px;
+}
+
+.user-dji .main-3-1 .box .item-title-lg {
+	width: 139px;
+	height: 35px;
+}
+
+.user-dji .summary-wide {
+	border-top: #f0f0f0 1px solid;
+	padding: 60px 0;
+	line-height: 1.6em;
+	font-size: 16px;
+}
+
+.user-dji .summary-wide p {
+	margin-bottom: 15px;
+}
+
+
+/*热门推荐*/
+
+.user-dji .hot-products .col-2 .item {
+	padding: 0;
+}
+
+.user-dji .hot-products .line-h1 {
+	top: 400px;
+	/*left: 800px;
+	width: 400px;*/
+}
+
+
+/*产品*/
+
+.user-dji .index-phantom h3 a {
+	float: none;
+	margin-left: 20px;
+}
+
+
+/*产品*/
+
+.user-dji .index-ronin .main-3-1 .cover img {
+	height: 350px;
+}
+
+.user-dji .index-ronin .box .item-title-lg {
+	width: 198px;
+	height: 34px;
+}
+
+
+/*产品*/
+
+.user-dji .index-osmo .main-3-1 .box {
+	top: 40px;
+}
+
+.user-dji .index-osmo .main-3-1 .cover {
+	top: -10px;
+	left: 110px;
+}
+
+.user-dji .index-osmo .main-3-1 .cover img {
+	height: 310px;
+}
+
+
+/*配件*/
+
+.user-dji .index-accessories .inner {
+	padding: 10px 0;
+}
+
+
+/*过滤*/
+
+.user-dji .ul-col-2 li {
+	width: 50%;
+	float: left;
+}
+
+
+/*增值服务*/
+
+.user-dji .box-col-2 .item {
+	width: 590px;
+	float: left;
+	box-sizing: border-box;
+	/*margin-bottom: 20px;*/
+}
+
+.user-dji .box-col-2 .item-right {
+	float: right;
+}
+
+.user-dji .box-col-2 .item .inner {
+	padding: 30px 20px;
+	overflow: hidden;
+}
+
+.user-dji .box-col-2 .item .icon {
+	float: left;
+	display: block;
+	border: #f0f0f0 1px solid;
+	-webkit-border-radius: 300em;
+	-moz-border-radius: 300em;
+	border-radius: 300em;
+	width: 98px;
+	height: 98px;
+}
+
+.user-dji .box-col-2 .item .item-content {
+	float: left;
+	display: block;
+	width: 430px;
+	text-align: left;
+	line-height: 1.4em;
+	margin-left: 20px;
+}
+
+.user-dji .box-col-2 .item .item-content .item-title {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+.user-dji .box-col-2 .item .item-content p {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.user-dji .box-col-2 .item .item-content a {
+	float: left;
+}
+
+
+/*返回顶部*/
+
+.user-dji .back-to-top a {
+	display: inline-block;
+	box-sizing: content-box;
+	text-align: center;
+	width: 24%;
+	padding: 15px 0;
+	text-decoration: none;
+	color: #666;
+	font-size: 14px;
+	border-right: #f0f0f0 1px solid;
+}
+
+.user-dji .back-to-top a:hover {
+	color: #4BA9F5;
+}
+
+.user-dji .back-to-top a.last {
+	border: none;
+}
+
+
+/*品牌故事*/
+
+.user-dji .dji-box-wide {
+	width: 990px;
+	position: relative;
+}
+
+.user-dji .dji-box-wide .dji-box {
+	width: 1920px;
+	height: 400px;
+	margin-left: -465px;
+}
+
+.user-dji .dji-box-wide .dji-box h3{
+	background: none;
+}
+
+.user-dji .dji-box-wide .dji-box .brand-story {
+	width: 1200px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.user-dji .dji-box-wide .dji-box .brand-story .box {
+	position: absolute;
+	left: 0;
+	top: 40px;
+	width: 65%;
+	padding: 20px 40px;
+	line-height: 1.8em;
+	font-size: 16px;
+	color: #fff;
+	background: rgba(0, 0, 0, .3);
+}
+
+.user-dji .dji-box-wide .dji-box .brand-story .box h3 {
+	color: #fff;
+}
+
+.user-dji .dji-box-wide .dji-box .brand-story .box p {
+	margin-bottom: 15px;
+}
+
+.user-dji .index-phantom .col-4 .line-h2 {
+	bottom: 0;
+}
+
+.user-dji .index-inspire .main-wide {
+	border-bottom: #f0f0f0 1px solid;
+}
+
+.user-dji .index-inspire .main-wide .cover {
+	left: 0;
+	top: 10px;
+	width: 800px;
+	height: auto;
+}
+
+.user-dji .index-inspire .main-wide .box {
+	left: 820px;
+	top: 120px;
+}
+
+.user-dji .index-osmo .col-4 {
+	height: 340px;
+}
+
+.user-dji .index-osmo .main-3-1 {
+	height: 340px;
+}
+
+.user-dji .index-osmo .main-3-1 .cover img {
+	height: 350px;
+}
+
+.user-dji .index-osmo .main-3-1 .box {
+	top: 50px;
+}
+
+.user-dji .index-accessories .inner {
+	padding: 0;
+}
+
+.user-dji .index-accessories .line-h1 {
+	top: 345px;
+}
+
+.user-dji .index-accessories .line-h2 {
+	top: 690px;
+}
+
+.user-dji .dji-box-wide {
+	width: 1200px;
+	position: relative;
+}
+
+
+/*以上为通用样式*/
+
+.user-dji .dji-box {
+	margin-left: -105px;
+}
+
+.user-dji .dji-box-wide .dji-box {
+	background: url(https://img.alicdn.com/imgextra/i1/1773095659/TB2CbhbnFXXXXbxXpXXXXXXXXXX_!!1773095659.jpg) 0 0 no-repeat;
+}
+
+.user-dji .box-col-2 .item .icon.icon-service {
+	background: url(https://img.alicdn.com/imgextra/i1/1773095659/TB2qG0QnXXXXXcSXpXXXXXXXXXX_!!1773095659.png) 50% 50% no-repeat;
+}
+
+.user-dji .box-col-2 .item .icon.icon-dji-care {
+	background: url(https://img.alicdn.com/imgextra/i2/1773095659/TB2deyrnXXXXXbiXXXXXXXXXXXX_!!1773095659.png) 50% 50% no-repeat;
+}
+
+.user-dji .dji-box .col-2 .bg1 {
+	background: url(https://img.alicdn.com/imgextra/i3/1773095659/TB2c0mnnXXXXXXlXpXXXXXXXXXX_!!1773095659.jpg) 0 0 no-repeat;
+}
+
+.user-dji .dji-box .col-2 .bg2 {
+	background: url(https://img.alicdn.com/imgextra/i2/1773095659/TB2luGpnXXXXXcMXXXXXXXXXXXX_!!1773095659.jpg) 0 0 no-repeat;
+}
